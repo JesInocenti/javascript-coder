@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.header{
+    background-image: linear-gradient(to left top, #c90d1d, #ce255d, #be4d8e, #a16cac, #8883b4, #8794ba, #8fa2bb, #9fafbb, #b3c2ca, #c9d5d9, #e0e8e9, #f8fbfb);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo barramenu";
+    padding: 2em;
+    align-items: center;
+   
+}
+.principal{
+    background-color: white;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "cajaprimera cajaprimera"
+    "cajasegunda cajasegunda"
+    "cajatercera cajacuarta";
+}
+
+.contactovia{
+    background-image: linear-gradient(to left top, #c90d1d, #ce255d, #be4d8e, #a16cac, #8883b4, #8794ba, #8fa2bb, #9fafbb, #b3c2ca, #c9d5d9, #e0e8e9, #f8fbfb);
+    grid-area: section;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+}
+
+.footer{
+    background-color: black;
+    grid-area: footer;
+    height: fit-content;
+    width: 100%;
+}
+
+#gridarea{
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    gap: 10px;
+    grid-column: auto;
+    grid-row: repeat(4 auto);
+    grid-template-areas:
+    "header"
+    "main"
+    "section"
+    "footer";    
+}
+.gridarea >div{
+    display: flex;
+}
+
+@media (max-width:958px){
+    #gridarea{
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: repeat(4 auto);
+        grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer";
+        align-content: center;
+    }
+    .gridarea >div{
+        display: flex;
+        width: fit-content;
+    }
+    .header{
+        background-color: white;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:  
+        "logo"
+        "barramenu";
+        padding: 0.5em;
+    }
+    .principal{
+        background-color: white;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:  
+        "cajaprimera"
+        "cajasegunda"
+        "cajatercera"
+        "cajacuarta";
+    }
+    .cajanavbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5em;
+
+    }
+  
+    .header .cajanavbar .menu .contenedor li a{
+        padding: 1.5em;
+        font-size: 0.9em;
+    }
+    .principal .cajamision h1{
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+    .principal .cajamision h3{
+        font-size: 0.8em;
+    }
+    .principal .cajaempresa h2{
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    .principal .cajaempresa p{
+        font-size: 0.7em;
+    }
+    .principal .cajabotones .servicio{
+        padding: 0.7em;
+        margin: auto;
+    
+    }
+    .principal .cajabotones .cotizacion{
+        padding: 0.7em;
+        margin: 2em auto;
+    
+    }
+    .principal .cajabotones .carga{
+        padding: 0.7em;
+        margin: auto;
+    
+    }
+
+}
+@media (max-width:468px){
+   
+    #gridarea{
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: repeat(4 auto);
+        grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer";
+        align-content: center;
+    }
+    .gridarea >div{
+        display: flex;
+        width: fit-content;
+    }
+    .header{
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:  
+        "logo"
+        "barramenu";
+        padding: 0.5em;
+    }
+    .principal{
+        background-color: white;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:  
+        "cajaprimera"
+        "cajasegunda"
+        "cajatercera"
+        "cajacuarta";
+    }
+    .cajanavbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5em;
+
+    }
+  
+    .header .cajanavbar .menu .contenedor li a{
+        padding: 0.8em;
+        font-size: 0.75em;
+    }
+    .principal .cajamision h1{
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+    .principal .cajamision h3{
+        font-size: 0.8em;
+    }
+    .principal .cajaempresa h2{
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    .principal .cajaempresa p{
+        font-size: 0.7em;
+    }
+    .principal .cajabotones .servicio{
+        padding: 0.7em;
+        margin: auto;
+        font-size: smaller;
+    }
+    .principal .cajabotones .cotizacion{
+        padding: 0.7em;
+        margin: 2em auto;
+        font-size: smaller;
+    }
+    .principal .cajabotones .carga{
+        padding: 0.7em;
+        margin: auto;
+        font-size: smaller;
+    }
+
+   
+    .contactovia .contacto h3{
+        font-size: 1em;
+    
+    }
+    .contactovia .vias .logowapp img{
+        height: 2em;
+        width: auto;
+    }
+    .contactovia .vias .logowapp p{
+        font-size: 0.6em;
+    }
+    .contactovia .vias .logomail img{
+        height: 2em;
+        width: auto;
+    }
+    .contactovia .vias .logomail p{
+        font-size: 0.6em;
+    }
+    .footer p{
+        font-size: 0.8em;
+
+    }
+
+
+
+
+    
+}
+
+
+
+
+
+
+.cajamision{
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    grid-area: cajaprimera;
+    display: block;
+
+}
+.cajaimagen{
+    grid-area: cajasegunda;
+    display: grid;
+    margin: 0%;
+}
+
+.cajaimagen img{
+    height: auto;
+    width: fit-content;
+    max-width: 100%;
+    margin: auto;
+
+}
+
+.home01:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+
+}
+.cajaempresa{
+    margin: 0%;
+    background-color: white;
+    grid-area: cajatercera;
+    margin: 0%;
+}
+.cajabotones{
+    margin: 0%;
+    background-color: white;
+    grid-area: cajacuarta;
+}
+
+.cajalogo{
+    grid-area: logo;
+    margin: 0%;
+}
+.cajanavbar{
+    grid-area: barramenu; 
+    margin: 0%;
+    display: flex;
+    width: 100%;
+}
+
+.cajalogo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.cajalogo:hover .logo{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+.cajalogo{
+    overflow:hidden;
+}
+
+.cajanavbar .menu .contenedor{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+.contenedor li{
+    list-style: none;
+}
+
+.cajanavbar .menu .contenedor li a{
+    text-decoration: none;
+    padding: 3em;
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    
+}
+.cajanavbar .menu .contenedor li a:hover{
+    color: white;
+    cursor: pointer;
+}
+.cajamision{
+    display: inline-block;
+    text-align: center;
+    padding: 2em;
+    margin: 0%;
+}
+
+.cajamision h1{
+    color: black;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+.cajamision h1:hover{
+    animation: animate__backInDown;
+    animation-duration: 2s;
+
+}
+.cajamision h3{
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.5em;
+    font-weight: 700;
+}
+.cajamision h3:hover{
+    animation: animate__backInUp;
+    animation-duration: 2s;
+
+}
+
+.cajaempresa h2{
+    color: black;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    padding: 1.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+
+}
+.cajaempresa h2:hover{
+    animation: animate__lightSpeedInLeft;
+    animation-duration: 2s;
+
+}
+
+.cajaempresa p{
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.3em;
+    text-align: justify;
+    line-height: 250%;
+    font-weight: 800;
+
+}
+.cajabotones{
+    display:block;
+    padding: 5%;
+
+}
+.cajabotones .servicio{
+    text-decoration: none;
+    background-color: black;
+    width: 50%;
+    margin: 4em auto;
+    padding: 1.2em;
+    border: 0.5em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+
+.cajabotones .servicio a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.servicio a:hover{
+    color: red;
+}
+
+.cajabotones .cotizacion{
+    text-decoration: none;
+    background-color: black;
+    width: 50%;
+    margin: 6em auto;
+    padding: 1.2em;
+    border: 0.5em;
+    border-radius: 1em;
+    text-align: center;
+    transition: all 1s;
+}    
+
+
+.cajabotones .cotizacion a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.cajabotones .cotizacion a:hover{
+    color: red;
+}
+
+.cajabotones .carga{
+    text-decoration: none;
+    background-color: black;
+    width: 50%;
+    margin-top: 4em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0%;
+    padding: 1.2em;
+    border: 0.5em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.cajabotones .carga a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.carga a:hover{
+    color: red;
+}
+
+
+.contacto{
+    background: linear-gradient(boton red,white);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.contacto h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align:  center;
+    font-weight: bold;
+    margin-top: auto;
+    padding-top: 0.5em;
+
+}
+.contacto h3:hover{
+    animation: animateanimate__flip;
+    animation-duration: 2s;
+
+}
+
+.vias{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 3em 7em;
+   
+}
+
+.logowapp{
+    display: flex;
+    align-items: center;
+    height: 0.2em;
+}
+
+.logomail{
+    display: flex;
+    align-items: center;
+    height: 0.2em;
+}
+
+
+.pie{
+    width: auto;
+    height: auto;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+
+
+
+
+

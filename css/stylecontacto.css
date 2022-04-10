@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.header{
+    background-color: white;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo barramenu";
+    padding: 2em;
+    align-items: center;
+   
+}
+.contactoprincipal{
+    background-color: white;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "cajaprimera"
+    "cajasegunda";
+}
+
+.contactovia{
+    background-color: gray;
+    grid-area: section;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+}
+
+.footer{
+    background-color: black;
+    grid-area: footer;
+    height: fit-content;
+    width: 100%;
+}
+
+#gridareacontacto{
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    gap: 10px;
+    grid-column: auto;
+    grid-row: repeat(4 auto);
+    grid-template-areas:
+    "header"
+    "main"
+    "section"
+    "footer";    
+}
+.gridareacontacto >div{
+    display: flex;
+}
+
+@media (max-width:958px){
+    #gridareacontacto{
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: repeat(4 auto);
+        grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer";
+        align-content: center;
+    }
+    .gridareacontacto >div{
+        display: flex;
+        width: fit-content;
+    }
+    .header{
+        background-color: white;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:  
+        "logo"
+        "barramenu";
+        padding: 0.5em;
+    }
+    .contactoprincipal{
+        background-color: white;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:  
+        "cajaprimera"
+        "cajasegunda";
+    }
+    .cajanavbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5em;
+
+    }
+  
+    .header .cajanavbar .menu .contenedor li a{
+        padding: 1.5em;
+        font-size: 0.9em;
+    }
+   
+
+}
+
+.cajaempresa{
+    margin: 0%;
+    background-color: white;
+    grid-area: cajatercera;
+    margin: 0%;
+}
+.cajabotones{
+    margin: 0%;
+    background-color: white;
+    grid-area: cajacuarta;
+}
+
+.cajalogo{
+    background-color: white;
+    grid-area: logo;
+    margin: 0%;
+}
+.cajanavbar{
+    background-color: white;
+    grid-area: barramenu; 
+    margin: 0%;
+    display: flex;
+    width: 100%;
+}
+
+.cajalogo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.cajanavbar .menu .contenedor{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+.contenedor li{
+    list-style: none;
+}
+
+.cajanavbar .menu .contenedor li a{
+    text-decoration: none;
+    padding: 3em;
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    
+}
+.cajanavbar .menu .contenedor li a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.contacto{
+    background-color: rgb(212, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.contacto h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align:  center;
+    font-weight: bold;
+    margin-top: auto;
+    padding-top: 0.5em;
+
+}
+
+.vias{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 3em 7em;
+   
+}
+
+.logowapp{
+    display: flex;
+    align-items: center;
+    height: 0.2em;
+}
+
+.logomail{
+    display: flex;
+    align-items: center;
+    height: 0.2em;
+}
+
+
+.pie{
+    width: auto;
+    height: auto;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    text-align: center
+
+}
+    
+.contactoformulario{
+
+    width: 30%;
+    height: 600px;
+    margin: auto;
+   
+
+
+}
+h2{
+    color: red;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+form{
+    background-color: white;
+    padding: 40px 0 ;
+    box-shadow: 0 0 8px 0 red;
+    border-radius: 10px;
+     
+
+}
+
+form .grupo{
+    position: relative;
+    margin: 10px;
+    color: white;
+}
+
+input{
+    background-color: none;
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+
+
+
+
+
+

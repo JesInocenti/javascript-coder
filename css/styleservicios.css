@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.header{
+    background-color: white;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo barramenu";
+    padding: 2em;
+    align-items: center;
+   
+}
+.principalservicios{
+    background-color: white;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "cajaprimera cajaprimera"
+    "cajasegunda cajasegunda"
+    "cajatercera cajacuarta";
+}
+
+.estadocarga{
+    background-color: white;
+    grid-area: section;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+}
+
+.footer{
+    background-color: black;
+    grid-area: footer;
+    height: fit-content;
+    width: 100%;
+}
+
+#gridareaservicios{
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    gap: 10px;
+    grid-column: auto;
+    grid-row: repeat(4 auto);
+    grid-template-areas:
+    "header"
+    "main"
+    "section"
+    "footer";    
+}
+.gridareaservicios >div{
+    display: flex;
+}
+
+@media (max-width:958px){
+    #gridareaservicios {
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: repeat(4 auto);
+        grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer";
+        align-content: center;
+    }
+    .gridareaservicios >div{
+        display: flex;
+        width: fit-content;
+    }
+    .header{
+        background-color: white;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:  
+        "logo"
+        "barramenu";
+        padding: 0.5em;
+    }
+    .principalservicios{
+        background-color: white;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:  
+        "cajaprimera"
+        "cajasegunda"
+        "cajatercera"
+        "cajacuarta";
+    }
+    .cajanavbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5em;
+
+    }
+  
+    .header .cajanavbar .menu .contenedor li a{
+        padding: 1.5em;
+        font-size: 0.9em;
+    }
+    .principalservicios .cajamision h1{
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+    .principalservicios .cajamision h3{
+        font-size: 0.8em;
+    }
+    .principalservicios .cajacargagranos h4{
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    .principalservicios .cajacargagranos p{
+        font-size: 0.7em;
+    }
+    .principalservicios .cajaespeciales h4{
+        font-size: 1.2em;
+        font-weight: 900;
+    
+    }
+    .principalservicios .cajaespeciales p{
+        font-size: 0.7em;
+    }
+    
+    
+
+
+}
+@media (max-width:468px){
+   
+    #gridareaservicios{
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: repeat(4 auto);
+        grid-template-areas:
+        "header"
+        "main"
+        "section"
+        "footer";
+        align-content: center;
+    }
+    .gridareaservicios >div{
+        display: flex;
+        width: fit-content;
+    }
+    .header{
+        background-color: white;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:  
+        "logo"
+        "barramenu";
+        padding: 0.5em;
+    }
+    .principal{
+        background-color: white;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:  
+        "cajaprimera"
+        "cajasegunda"
+        "cajatercera"
+        "cajacuarta";
+    }
+    .cajanavbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5em;
+
+    }
+  
+    .header .cajanavbar .menu .contenedor li a{
+        padding: 0.8em;
+        font-size: 0.75em;
+    }
+    .principal .cajamision h1{
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+    .principal .cajamision h3{
+        font-size: 0.8em;
+    }
+    .principal .cajacargagranos h4{
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    .principal .cajacargagranos p{
+        font-size: 0.7em;
+    }
+    .principal .cajaespeciales h4{
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+    .principal .cajaespeciales p{
+        font-size: 0.7em;
+    }
+    
+    
+    .footer p{
+        font-size: 0.8em;
+
+    }
+    
+}
+
+
+.cajamision{
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    grid-area: cajaprimera;
+    display: block;
+
+}
+.cajaimagen{
+    grid-area: cajasegunda;
+    display: grid;
+    margin: 0%;
+
+}
+.cajaimagen img{
+    height: auto;
+    width: fit-content;
+    max-width: 100%;
+    margin: auto;
+
+}
+
+.cajacargagranos{
+    margin: 0%;
+    background-color: white;
+    grid-area: cajatercera;
+    margin: 0%;
+}
+.cajaespeciales{
+    margin: 0%;
+    background-color: white;
+    grid-area: cajacuarta;
+}
+
+.cajalogo{
+    background-color: white;
+    grid-area: logo;
+    margin: 0%;
+}
+.cajanavbar{
+    background-color: white;
+    grid-area: barramenu; 
+    margin: 0%;
+    display: flex;
+    width: 100%;
+}
+
+.cajalogo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.cajanavbar .menu .contenedor{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+.contenedor li{
+    list-style: none;
+}
+
+.cajanavbar .menu .contenedor li a{
+    text-decoration: none;
+    padding: 3em;
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    
+}
+.cajanavbar .menu .contenedor li a:hover{
+    color: red;
+    cursor: pointer;
+}
+.cajamision{
+    display: inline-block;
+    text-align: center;
+    padding: 2em;
+    margin: 0%;
+}
+
+.cajamision h1{
+    color: black;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+.cajamision h3{
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.5em;
+    font-weight: 700;
+}
+.cajacargagranos h4{
+    color: black;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    padding: 1.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+
+}
+.cajacargagranos p{
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.3em;
+    text-align: justify;
+    line-height: 250%;
+    font-weight: 800;
+
+}
+
+.cajaespeciales h4{
+    color: black;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    padding: 1.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+
+}
+.cajaespeciales p{
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.3em;
+    text-align: justify;
+    line-height: 250%;
+    font-weight: 800;
+
+}
+
+
+.estadocarga{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.carga h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    text-align:  center;
+    font-weight: bold;
+    margin-top: auto;
+    padding-top: 0.5em;
+
+}
+.formulariocarga{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+.estadocarga{
+    width: 100%;
+    background-color: white;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    margin: 5em;
+
+}
+
+.carga{
+    padding: 2em;
+}
+.carga h2{
+    color: red;
+}
+
+.pie{
+    width: auto;
+    height: auto;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    text-align: center
+
+}
