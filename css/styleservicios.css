@@ -5,7 +5,7 @@
 
 }
 .header{
-    background-color: white;
+    background-image: linear-gradient(to left top, #c90d1d, #ce255d, #be4d8e, #a16cac, #8883b4, #8794ba, #8fa2bb, #9fafbb, #b3c2ca, #c9d5d9, #e0e8e9, #f8fbfb);
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -29,7 +29,7 @@
 }
 
 .estadocarga{
-    background-color: white;
+   background-color: white;
     grid-area: section;
     width: 100%;
     height: fit-content;
@@ -80,7 +80,6 @@
         width: fit-content;
     }
     .header{
-        background-color: white;
         grid-area: header;
         display: grid;
         grid-template-columns: auto;
@@ -248,6 +247,13 @@
     margin: auto;
 
 }
+.home01:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+
+}
 
 .cajacargagranos{
     margin: 0%;
@@ -262,12 +268,11 @@
 }
 
 .cajalogo{
-    background-color: white;
     grid-area: logo;
     margin: 0%;
 }
+
 .cajanavbar{
-    background-color: white;
     grid-area: barramenu; 
     margin: 0%;
     display: flex;
@@ -279,6 +284,13 @@
     justify-content: center;
     align-content: center;
 
+}
+.cajalogo:hover .logo{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+.cajalogo{
+    overflow:hidden;
 }
 .cajanavbar .menu .contenedor{
     display: flex;
@@ -317,12 +329,22 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
 }
+.cajamision h1:hover{
+    animation: animate__backInDown;
+    animation-duration: 2s;
+
+}
 .cajamision h3{
     color: black;
     font-size: 1.5em;
     font-family: 'Roboto', sans-serif;
     padding: 1.5em;
     font-weight: 700;
+}
+.cajamision h3:hover{
+    animation: animate__backInUp;
+    animation-duration: 2s;
+
 }
 .cajacargagranos h4{
     color: black;
@@ -332,7 +354,10 @@
     padding: 1.5em;
     padding-bottom: 0.5em;
     text-align: center;
-
+}
+.cajacargagranos h4:hover{
+    animation: animate__flip;
+    animation-duration: 2s;
 }
 .cajacargagranos p{
     color: black;
@@ -354,6 +379,10 @@
     padding-bottom: 0.5em;
     text-align: center;
 
+}
+.cajaespeciales h4:hover{
+    animation: animate__flip;
+    animation-duration: 2s;
 }
 .cajaespeciales p{
     color: black;
@@ -382,6 +411,10 @@
     padding-top: 0.5em;
 
 }
+.carga h2:hover{
+    animation: animate__lightSpeedInLeft;
+    animation-duration: 2s;
+}
 .formulariocarga{
     color: black;
     font-size: 20px;
@@ -395,7 +428,6 @@
     display: block;
     justify-content: center;
     align-content: center;
-    margin: 5em;
 
 }
 
@@ -409,6 +441,7 @@
 .pie{
     width: auto;
     height: auto;
+    margin-top: 5em;
     background-color: black;
     padding: 1%;
     color: white;
