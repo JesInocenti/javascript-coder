@@ -6,7 +6,6 @@
 }
 .header{
     background-image: linear-gradient(to left top, #c90d1d, #ce255d, #be4d8e, #a16cac, #8883b4, #8794ba, #8fa2bb, #9fafbb, #b3c2ca, #c9d5d9, #e0e8e9, #f8fbfb);
-    line-height: 0%;
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr 4fr;
