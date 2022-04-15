@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.header{
+    background-color: black;    
+}
+.collapse{
+    flex-grow: initial;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0.6rem;
+}
+.cotizacionprincipal h2{
+    color: rgb(95, 108, 165);
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    margin-top: 1rem;
+    text-align: center;
+}
+.cotizacionprincipal h2:hover{
+    animation: animate__lightSpeedInLeft;
+    animation-duration: 2s;
+
+}
+.pie{
+    width: auto;
+    height: auto;
+    margin-top: 5em;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    text-align: center
+
+}

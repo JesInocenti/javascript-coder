@@ -15,59 +15,54 @@
     font-size: 1.1rem;
     margin: 0.6rem;
 }
-.contactoprincipal{
-    margin: 5rem;
-}
-.section{
-    padding: 0.3rem;
-    background-color: rgb(214, 214, 243);
-}
-.contacto h3{
-    justify-content: center;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: auto;
 
-}
-.comunicate h2{
-    color: rgb(53, 54, 58);
+.container-fluid h1{
+    text-align: center;
+    color: black;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    margin-top: 1rem;
-    text-align: center;
+    padding-top: 2rem;
 }
-.comunicate h2:hover{
+
+.mision{
+    background-color: white;
+}
+
+.container-fluid h1{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    padding-top: 2rem;
+}
+.container-fluid h1:hover{
     animation: animate__backInDown;
     animation-duration: 2s;
-}
-.col h2:hover{
-    animation: animate__lightSpeedInLeft;
-    animation-duration: 2s;
 
 }
-.contacto h3:hover{
-    animation: animateanimate__flip;
-    animation-duration: 2s;
-
-}
-.section .vias{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0rem 1.2rem;
-}
-
-.bi{
-    margin: 0% 0.5rem;
+.container-fluid h3{
+    text-align: center;
+    color:rgb(95, 108, 165);
     font-size: 1rem;
-}    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 1.5rem 0;
+}
+.container-fluid h3:hover{
+    animation: animate__backInUp;
+    animation-duration: 2s;
+}
+.img-thumbnail{
+    margin: 0%;
+    padding: auto;
+}
 
 .pie{
     width: auto;
     height: auto;
+    margin-top: 5em;
     background-color: black;
     padding: 1%;
     color: white;
@@ -76,6 +71,3 @@
     text-align: center;
 
 }
-
-
-
