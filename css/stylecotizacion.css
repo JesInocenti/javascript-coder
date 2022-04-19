@@ -15,16 +15,30 @@
     font-size: 1.1rem;
     margin: 0.6rem;
 }
-.cotizacionprincipal h2{
+.container h2{
     color: rgb(95, 108, 165);
-    font-size: 2em;
+    font-size: 2.5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     margin-top: 1rem;
     text-align: center;
 }
-.cotizacionprincipal h2:hover{
-    animation: animate__lightSpeedInLeft;
+.container h2:hover{
+    animation: animate__backInDown;
+    animation-duration: 2s;
+
+}
+.container h3{
+    color: rgb(95, 108, 165);
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    margin-top: 1rem;
+    text-align: center;
+
+}
+.container h3:hover{
+    animation: animate__backInUp;
     animation-duration: 2s;
 
 }

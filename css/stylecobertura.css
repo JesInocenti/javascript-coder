@@ -15,10 +15,16 @@
     font-size: 1.1rem;
     margin: 0.6rem;
 }
-
+.row{
+    margin: 0%;
+    justify-content: space-between;
+}
+table{
+    margin: 0%;
+}
 .container-fluid h1{
     text-align: center;
-    color: black;
+    color: rgb(95, 108, 165);
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
@@ -31,7 +37,7 @@
 
 .container-fluid h1{
     text-align: center;
-    color: black;
+    color: rgb(95, 108, 165);
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
@@ -58,7 +64,12 @@
     margin: 0%;
     padding: auto;
 }
-
+.container{
+    margin: 0%;
+    align-items: center;
+    justify-content: center;
+   
+}
 .pie{
     width: auto;
     height: auto;
