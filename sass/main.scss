@@ -1,0 +1,177 @@
+
+.header{
+    background-color: black; 
+    .collapse{
+        flex-grow: initial;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: white;
+        font-size: 1.1rem;
+        margin: 0.6rem;
+    }
+}
+.container-fluid{
+    & h1{
+        text-align: center;
+        color: rgb(95, 108, 165);
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        padding-top: 2rem;
+        &:hover{
+            animation: animate__backInDown;
+            animation-duration: 2s;
+        }
+    }
+    & h3{
+        text-align: center;
+        color:rgb(95, 108, 165);
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        padding: 1.5rem 0;  
+        &:hover{
+            animation: animate__backInUp;
+            animation-duration: 2s;
+        }  
+    }
+}
+
+.col{
+    & h2{
+        color: rgb(95, 108, 165);
+        font-size: 2em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        margin-top: 1rem;
+        text-align: center; 
+        &:hover{
+            animation: animate__lightSpeedInLeft;
+            animation-duration: 2s;
+        }
+    }
+    & p{
+        color: rgb(2, 5, 32);
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+        line-height: 250%;
+        font-weight: 800;
+    }
+    & .btn{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.cajabotones{
+    display:block;
+    padding: 5%;
+    & .servicio{
+        text-decoration: none;
+        background-color: black;
+        width: 50%;
+        margin-top: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0%;
+        padding: 1rem;
+        border: 0.5rem;
+        border-radius: 1rem;
+        text-align: center;
+        & a{
+            text-decoration: none;
+            color: rgb(79, 79, 167);
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            &:hover{
+                color: lightblue;
+            }
+        }
+    }
+    & .cotizacion{
+        text-decoration: none;
+        background-color: black;
+        width: 50%;
+        margin-top: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0%;
+        padding: 1rem;
+        border: 0.5rem;
+        border-radius: 1rem;
+        text-align: center;
+        & a{
+            text-decoration: none;
+            color: rgb(79, 79, 167);
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            &:hover{
+                color: lightblue; 
+            }  
+        }
+    }
+    .carga{
+        text-decoration: none;
+        background-color: black;
+        width: 50%;
+        margin-top: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0%;
+        padding: 1rem;
+        border: 0.5rem;
+        border-radius: 1rem;
+        text-align: center;
+        & a{
+            text-decoration: none;
+            color: rgb(79, 79, 167);
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            &:hover{
+                color: lightblue;
+            }
+        }
+    } 
+
+}
+section{
+    background-color: rgb(129, 129, 238);
+    padding: 0.3rem;
+    h3{
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: auto;
+        &:hover{
+            animation: animateanimate__flip;
+            animation-duration: 2s;
+        }
+    }
+    & .vias{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 1.2rem;
+    } 
+}
+.bi{
+    margin: 0% 0.5rem;
+    font-size: 1rem;
+}  
+footer{
+    width: auto;
+    height: auto;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}

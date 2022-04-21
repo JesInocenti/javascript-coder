@@ -1,0 +1,219 @@
+.header {
+  background-color: black;
+}
+
+.header .collapse {
+  -webkit-box-flex: initial;
+      -ms-flex-positive: initial;
+          flex-grow: initial;
+}
+
+.header .navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  margin: 0.6rem;
+}
+
+.container-fluid h1 {
+  text-align: center;
+  color: #5f6ca5;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  padding-top: 2rem;
+}
+
+.container-fluid h1:hover {
+  -webkit-animation: animate__backInDown;
+          animation: animate__backInDown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.container-fluid h3 {
+  text-align: center;
+  color: #5f6ca5;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  padding: 1.5rem 0;
+}
+
+.container-fluid h3:hover {
+  -webkit-animation: animate__backInUp;
+          animation: animate__backInUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.col h2 {
+  color: #5f6ca5;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.col h2:hover {
+  -webkit-animation: animate__lightSpeedInLeft;
+          animation: animate__lightSpeedInLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.col p {
+  color: #020520;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  line-height: 250%;
+  font-weight: 800;
+}
+
+.col .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cajabotones {
+  display: block;
+  padding: 5%;
+}
+
+.cajabotones .servicio {
+  text-decoration: none;
+  background-color: black;
+  width: 50%;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0%;
+  padding: 1rem;
+  border: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cajabotones .servicio a {
+  text-decoration: none;
+  color: #4f4fa7;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.cajabotones .servicio a:hover {
+  color: lightblue;
+}
+
+.cajabotones .cotizacion {
+  text-decoration: none;
+  background-color: black;
+  width: 50%;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0%;
+  padding: 1rem;
+  border: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cajabotones .cotizacion a {
+  text-decoration: none;
+  color: #4f4fa7;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.cajabotones .cotizacion a:hover {
+  color: lightblue;
+}
+
+.cajabotones .carga {
+  text-decoration: none;
+  background-color: black;
+  width: 50%;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0%;
+  padding: 1rem;
+  border: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cajabotones .carga a {
+  text-decoration: none;
+  color: #4f4fa7;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.cajabotones .carga a:hover {
+  color: lightblue;
+}
+
+section {
+  background-color: #8181ee;
+  padding: 0.3rem;
+}
+
+section h3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+section h3:hover {
+  -webkit-animation: animateanimate__flip;
+          animation: animateanimate__flip;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+section .vias {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0rem 1.2rem;
+}
+
+.bi {
+  margin: 0% 0.5rem;
+  font-size: 1rem;
+}
+
+footer {
+  width: auto;
+  height: auto;
+  background-color: black;
+  padding: 1%;
+  color: white;
+  font-size: medium;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
