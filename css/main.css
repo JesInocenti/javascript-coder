@@ -1,5 +1,5 @@
 .header {
-  background-color: black;
+  background: white;
 }
 
 .header .collapse {
@@ -9,37 +9,37 @@
 }
 
 .header .navbar-dark .navbar-nav .nav-link {
-  color: white;
+  color: black;
   font-size: 1.1rem;
   margin: 0.6rem;
 }
 
-.container-fluid h1 {
+.container-fluid, .container-fluid .animate__animated .animate__backInDown, .container-fluid .animate__animated .animate__backInUp {
   text-align: center;
-  color: #5f6ca5;
+  color: red;
   font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid .animate__animated .animate__backInDown {
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 900;
   padding-top: 2rem;
 }
 
-.container-fluid h1:hover {
+.container-fluid .animate__animated .animate__backInDown:hover {
   -webkit-animation: animate__backInDown;
           animation: animate__backInDown;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
 
-.container-fluid h3 {
-  text-align: center;
-  color: #5f6ca5;
-  font-family: 'Roboto', sans-serif;
+.container-fluid .animate__animated .animate__backInUp {
   font-size: 1rem;
-  font-weight: 700;
-  padding: 1.5rem 0;
+  font-weight: 800;
+  padding: 1.5rem;
 }
 
-.container-fluid h3:hover {
+.container-fluid .animate__animated .animate__backInUp:hover {
   -webkit-animation: animate__backInUp;
           animation: animate__backInUp;
   -webkit-animation-duration: 2s;
@@ -48,7 +48,7 @@
 
 .col h2 {
   text-align: center;
-  color: #5f6ca5;
+  color: red;
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
   font-weight: 800;
@@ -63,7 +63,7 @@
 }
 
 .col p {
-  color: #020520;
+  color: black;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   text-align: justify;
@@ -105,14 +105,14 @@
 
 .cajabotones .servicio a {
   text-decoration: none;
-  color: #4f4fa7;
+  color: red;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: bol;
 }
 
 .cajabotones .servicio a:hover {
-  color: lightblue;
+  color: white;
 }
 
 .cajabotones .cotizacion {
@@ -131,14 +131,14 @@
 
 .cajabotones .cotizacion a {
   text-decoration: none;
-  color: #4f4fa7;
-  font-size: 1rem;
+  color: red;
+  font-size: 1em;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: bol;
 }
 
 .cajabotones .cotizacion a:hover {
-  color: lightblue;
+  color: white;
 }
 
 .cajabotones .carga {
@@ -157,22 +157,23 @@
 
 .cajabotones .carga a {
   text-decoration: none;
-  color: #4f4fa7;
-  font-size: 1rem;
+  color: red;
+  font-size: 1em;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: bol;
 }
 
 .cajabotones .carga a:hover {
-  color: lightblue;
+  color: white;
 }
 
 section {
-  background-color: #8181ee;
+  background-color: white;
   padding: 0.3rem;
 }
 
 section h3 {
+  color: red;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
