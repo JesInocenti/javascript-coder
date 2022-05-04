@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
-        <img src="./img/logo.png" width="200"/></a>
+        <img src="./img/logo.png" width="150"/></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,31 +40,85 @@
     </nav>
    </header>
    <main class="principal">
-     <div class="container-fluid">
-       <h1 class="animate__animated animate__backInDown">TU MERCADERÍA EN LAS MEJORES MANOS</h1>
-       <h3 class="animate__animated animate__backInUp">HONESTIDAD Y CALIDAD</h3>
-     </div>
-      <div class="container-fluid">
-        <img src="./img/home01.png" class="img-thumbnail" alt="homeimagen">
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/uno.jpg" class="d-block w-100" alt="banner_uno">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>TU MERCADERÍA EN LAS MEJORES MANOS</h2>
+            <p>HONESTIDAD Y CALIDAD</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/dos.jpg" class="d-block w-100" alt="banner_dos">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>TU MERCADERÍA EN LAS MEJORES MANOS</h2>
+            <p>HONESTIDAD Y CALIDAD</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/tres.jpg" class="d-block w-100" alt="Banner_tres">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>TU MERCADERÍA EN LAS MEJORES MANOS</h2>
+            <p>HONESTIDAD Y CALIDAD</p>
+          </div>
+      </div>
+    </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="animate__animated animate__lightSpeedInLeft">NUESTRA EMPRESA</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus deserunt dolorum natus quod blanditiis? Laudantium, nemo sit in porro excepturi vero non dicta hic veritatis laboriosam minima totam, eaque assumenda consequatur ratione modi blanditiis laborum suscipit maxime quam. Porro sint ea neque at, nemo placeat sunt alias magni, temporibus deleniti quis tenetur! Incidunt nam repudiandae, enim dolore nesciunt optio dolores numquam a blanditiis similique rem tempore sunt perferendis ipsam autem minus facere illo quas libero velit beatae quod quidem. Tempore!</p>
-          </div>
+            <h2 class="animate__animated animate__lightSpeedInLeft">QUIENES SOMOS</h2>
+            <p>Empresa dirigida por sus dueños quienes brindan atención personalizada, llevando a cabo una labor eficiente y comprometida con la filosofía de la organización. Nuestro personal está totalmente capacitado para coordinar e interactuar con el cliente.
+              Contamos con una flota moderna de equipos de transporte equipada con sistema de localización satelital GPS, para que su carga viaje con la mayor seguridad. La confiabilidad de estas unidades, nos permite minimizar la posibilidad de cualquier desperfecto que impacte en los tiempos de entrega de la mercadería.
+            </p>
+          </div> 
           <div class="col">
-            <div class="cajabotones">
-              <div class="servicio">
-                <a href="./pages/servicios.html" target="blanck">SERVICIOS</a>
-              </div>
-              <div class="cotizacion">
-                <a href="./pages/cotizacion.html" target="blanck">SOLICITAR PRESUPUESTO</a>
-              </div>
-              <div class="carga">
-               <a href="./pages/servicios.html" target="blanck">ESTADO DE LA CARGA</a>
-              </div>
+            <h2 class="animate__animated animate__lightSpeedInLeft">MISIÓN</h2>
+            <P>Aportar soluciones en el traslado de mercaderías dentro del territorop argentino, con alto nivel de calidad, eficacia y servicio.</P>
+            <h2 class="animate__animated animate__lightSpeedInLeft">VALORES</h2>
+            <ul>
+              <li>
+                Puntualidad
+              </li>
+              <li>
+                Compromiso
+              </li>
+              <li>
+                Honestidad
+              </li>
+              <li>
+                Trabajo en equipo
+              </li>
+              <li>
+                Efectividad
+              </li>
+            </ul>
           </div>
+          </div>
+          <div class="cajabotones">
+            <div class="servicio">
+              <a href="./pages/servicios.html" target="blanck">SERVICIOS</a>
+            </div>
+            <div class="cotizacion">
+              <a href="./pages/cotizacion.html" target="blanck">SOLICITAR PRESUPUESTO</a>
+            </div>
+            <div class="carga">
+             <a href="./pages/servicios.html" target="blanck">ESTADO DE LA CARGA</a>
+            </div>
     </main>
     <section class="section">
       <div class="contacto">

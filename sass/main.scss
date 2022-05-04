@@ -10,35 +10,35 @@
         margin: 0.6rem;
     }
 }
-.container-fluid{
-    text-align: center;
-    color: red;
-    font-family: 'Roboto', sans-serif;
-}
-.container-fluid .animate__animated .animate__backInDown {
-    @extend .container-fluid;
-    font-size: 2rem;
-    font-weight: 900;
-    padding-top: 2rem;
-    &:hover{
-        animation: animate__backInDown;
-        animation-duration: 2s;
-    }
-}
-.container-fluid .animate__animated .animate__backInUp{
-    @extend .container-fluid;
-    font-size: 1rem;
-    font-weight: 800;
-    padding: 1.5rem;  
-    &:hover{
-        animation: animate__backInUp;
-        animation-duration: 2s;
-    }  
-}
+// .container-fluid{
+//     text-align: center;
+//     color: red;
+//     font-family: 'Roboto', sans-serif;
+// }
+// .container-fluid .animate__animated .animate__backInDown {
+//     @extend .container-fluid;
+//     font-size: 2rem;
+//     font-weight: 900;
+//     padding-top: 2rem;
+//     &:hover{
+//         animation: animate__backInDown;
+//         animation-duration: 2s;
+//     }
+// }
+// .container-fluid .animate__animated .animate__backInUp{
+//     @extend .container-fluid;
+//     font-size: 1rem;
+//     font-weight: 800;
+//     padding: 1.5rem;  
+//     &:hover{
+//         animation: animate__backInUp;
+//         animation-duration: 2s;
+//     }  
+// }
 .col{
     & h2{
         text-align: center;
-        color: red;
+        color: black;
         font-family: 'Roboto', sans-serif;
         font-size: 2em;
         font-weight: 800;
@@ -77,7 +77,7 @@
     text-align: center;
     & a{
         text-decoration: none;
-        color: red;
+        color: white;
         font-size: 1em;
         font-family: 'Roboto', sans-serif;
         font-weight: bol;
