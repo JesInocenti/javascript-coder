@@ -1,136 +1,204 @@
 @import "./abstracts/variables";
+body{
+    background-color: white;
+}
 .header{
     background: white;
+    // width: 100%;
+    // position: fixed;
+    // z-index: 100;
     .collapse{
         flex-grow: initial;
     }
     .navbar-dark .navbar-nav .nav-link {
-        color: $colorPrincipal;
-        font-size: 1.1rem;
+        color: rgb(7, 6, 6);
+        font-size: 0.9rem;
         margin: 0.6rem;
+        font-weight: 700;
+        font-style: italic;
+        &:hover{
+            color: red;
+        }
     }
 }
-// .container-fluid{
-//     text-align: center;
-//     color: red;
-//     font-family: 'Roboto', sans-serif;
-// }
-// .container-fluid .animate__animated .animate__backInDown {
-//     @extend .container-fluid;
-//     font-size: 2rem;
-//     font-weight: 900;
-//     padding-top: 2rem;
-//     &:hover{
-//         animation: animate__backInDown;
-//         animation-duration: 2s;
-//     }
-// }
-// .container-fluid .animate__animated .animate__backInUp{
-//     @extend .container-fluid;
-//     font-size: 1rem;
-//     font-weight: 800;
-//     padding: 1.5rem;  
-//     &:hover{
-//         animation: animate__backInUp;
-//         animation-duration: 2s;
-//     }  
-// }
-.col{
+.slide img{
+    height: 90vh;
+}
+.carousel-caption{
     & h2{
+        font-family: 'Carter One', cursive;
+        color: white;
+        text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-size: 1.8rem;
+    }
+    & p{
+        font-family: 'Carter One', cursive;
+        color: white;
+        text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-size: 1.5rem;  
+    } 
+} 
+.row{
+    background-color: white;
+    margin: 1rem;
+}
+.col{
+    background-color: white;
+    margin: 30px;
+    box-shadow: 0px 10px 10px black;
+    & h1{
         text-align: center;
-        color: black;
-        font-family: 'Roboto', sans-serif;
-        font-size: 2em;
+        color: rgb(228, 15, 15);
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1.5rem;
         font-weight: 800;
-        margin-top: 1rem;
+        margin: 1.5rem;
+        text-shadow: black;
         &:hover{
             animation: animate__lightSpeedInLeft;
             animation-duration: 2s;
         }
     }
-    & p{
-        color: $colorPrincipal;
+    & h4{
+        color: rgb(228, 15, 15);
+        font-family: 'Merriweather Sans', sans-serif;
         font-size: 1rem;
+        font-weight: 800;
+        text-align: center;
+
+    }
+    & p{
+        color: rgb(7, 0, 0);
+        font-size: 0.8rem;
         font-family: 'Roboto', sans-serif;
         text-align: justify;
-        line-height: 250%;
+        line-height: 200%;
         font-weight: 800;
     }
-    & .btn{
-        display: flex;
-        justify-items: center;
-        justify-content: center;
-        align-items: center;
-    }
 }
-@mixin btn {
-    text-decoration: none;
-    background-color: $colorPrincipal;
-    width: 50%;
-    margin-top: 2rem;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0%;
-    padding: 1rem;
-    border: 0.5rem;
-    border-radius: 1rem;
-    text-align: center;
-    & a{
-        text-decoration: none;
-        color: white;
-        font-size: 1em;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bol;
-        &:hover{
-            color: white; 
-        }  
-    }
+.col-6{
+    font-family: 'Merriweather Sans', sans-serif;
 }
-.cajabotones{
-    display:block;
-    padding: 5%;
-    & .servicio{
-        @include btn;
-    }
-    & .cotizacion{
-        @include btn;
-    }
-    .carga{
-        @include btn;
-    }
+.btn{
+    box-shadow: inset 8px 10px 10px 1px rgba(250, 172, 172, 0.5);
 }
 $colores: (
     uno: white,
     dos: red,
 );
-section{
-    background-color: white;
-    padding: 0.3rem;
-    h3{
-        color: map-get($map: $colores, $key: dos);
-        justify-content: center;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        font-size: 2em;
-        font-weight: bold;
-        margin-top: auto;
-        &:hover{
-            animation: animateanimate__flip;
-            animation-duration: 2s;
-        }
-    }
-    & .vias{
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        padding: 0rem 1.2rem;
-    } 
+.información{
+    align-items: center;
 }
-.bi{
-    margin: 0% 0.5rem;
-    font-size: 1rem;
-}  
-footer{
+.text-center h4{
+    color: rgb(228, 15, 15);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#galeria .col-lg-4{
+    padding: 1.5rem;
+    background-color: rgb(10, 2, 2);
+}
+#galeria img{
+    width: 100%;
+    height: 250px;
+}
+#galeria img:hover {
+    border: 3px solid red;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:30%;
+    position:relative;
+    height:0;
+}
+.centro h4{
+    color: rgb(228, 15, 15);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 2rem;
+}
+.comunicate h2{
+    color: rgb(228, 15, 15);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 2rem;
+}
+.container{
+    & h1{
+        color: rgb(228, 15, 15);
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+        margin: 2rem; 
+    }
+    & h4{
+        color: rgb(8, 3, 3);
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 800;
+        text-align: center;
+        margin: 2rem; 
+    }
+}
+.cobertura{
+    & h1{
+        color: rgb(228, 15, 15);
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+        margin: 2rem; 
+    }
+    & h4{
+        color: rgb(8, 3, 3);
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 800;
+        text-align: center;
+        margin: 2rem; 
+    }
+    & p{
+        color: rgb(8, 3, 3);
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: justify;
+        margin: 2rem; 
+    }
+}
+.servicio h1{
+    color: rgb(228, 15, 15);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 1.5rem;
+}
+.carga h4{
+    color: rgb(228, 15, 15);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 1.5rem;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.contacto{
     width: auto;
     height: auto;
     background-color: $colorPrincipal;
@@ -139,4 +207,30 @@ footer{
     font-size: medium;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    & .vias{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 1.2rem;
+        & h5{
+            margin: 1.5rem;
+        }
+    } 
+
 }
+.bi{
+    margin: 0% 0.5rem;
+    font-size: 1rem;
+}
+.footer{
+    width: auto;
+    height: auto;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}  
+
+
