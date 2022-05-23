@@ -1,10 +1,12 @@
 @charset "UTF-8";
 body {
   background-color: white;
+  margin: 0%;
 }
 
 .header {
   background: white;
+  width: 100%;
 }
 
 .header .collapse {
@@ -29,23 +31,32 @@ body {
   height: 90vh;
 }
 
-.carousel-caption h2 {
+.h, .carousel-caption h2, .carousel-caption h5 {
   font-family: 'Carter One', cursive;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.carousel-caption h2 {
   font-size: 1.8rem;
 }
 
-.carousel-caption p {
-  font-family: 'Carter One', cursive;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.carousel-caption h5 {
   font-size: 1.5rem;
 }
 
 .row {
   background-color: white;
   margin: 1rem;
+}
+
+.h1, .col h1, .col h4, .text-center h2, .centro h4, .comunicate h2, .container h1, .cobertura h1, .servicio h1, .carga h4 {
+  text-align: center;
+  color: #e40f0f;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 800;
+  margin: 1.5rem;
+  text-shadow: black;
 }
 
 .col {
@@ -56,13 +67,7 @@ body {
 }
 
 .col h1 {
-  text-align: center;
-  color: #e40f0f;
-  font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5rem;
-  font-weight: 800;
-  margin: 1.5rem;
-  text-shadow: black;
 }
 
 .col h1:hover {
@@ -73,11 +78,7 @@ body {
 }
 
 .col h4 {
-  color: #e40f0f;
-  font-family: 'Merriweather Sans', sans-serif;
   font-size: 1rem;
-  font-weight: 800;
-  text-align: center;
 }
 
 .col p {
@@ -104,13 +105,8 @@ body {
           align-items: center;
 }
 
-.text-center h4 {
-  color: #e40f0f;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 2rem;
+.text-center h2 {
+  font-size: 1.5rem;
 }
 
 #galeria .col-lg-4 {
@@ -135,60 +131,27 @@ body {
 }
 
 .centro h4 {
-  color: #e40f0f;
-  font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5rem;
-  font-weight: 800;
-  text-align: center;
-  margin: 2rem;
 }
 
 .comunicate h2 {
-  color: #e40f0f;
-  font-family: 'Merriweather Sans', sans-serif;
   font-size: 2rem;
+}
+
+.h4, .container h4, .cobertura h4 {
+  color: #080303;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.3rem;
   font-weight: 800;
   text-align: center;
   margin: 2rem;
 }
 
 .container h1 {
-  color: #e40f0f;
-  font-family: 'Merriweather Sans', sans-serif;
   font-size: 2rem;
-  font-weight: 800;
-  text-align: center;
-  margin: 2rem;
 }
 
-.container h4 {
-  color: #080303;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 800;
-  text-align: center;
-  margin: 2rem;
-}
-
-.cobertura h1 {
-  color: #e40f0f;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  text-align: center;
-  margin: 2rem;
-}
-
-.cobertura h4 {
-  color: #080303;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 800;
-  text-align: center;
-  margin: 2rem;
-}
-
-.cobertura p {
+.p, .cobertura p {
   color: #080303;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1rem;
@@ -197,22 +160,16 @@ body {
   margin: 2rem;
 }
 
-.servicio h1 {
-  color: #e40f0f;
-  font-family: 'Merriweather Sans', sans-serif;
+.cobertura h1 {
   font-size: 2rem;
-  font-weight: 800;
-  text-align: center;
-  margin: 1.5rem;
+}
+
+.servicio h1 {
+  font-size: 2rem;
 }
 
 .carga h4 {
-  color: #e40f0f;
-  font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5rem;
-  font-weight: 800;
-  text-align: center;
-  margin: 1.5rem;
 }
 
 .map-responsive iframe {
