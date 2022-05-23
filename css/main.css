@@ -16,7 +16,7 @@ body {
           flex-grow: initial;
 }
 
-.header .navbar-dark .navbar-nav .nav-link {
+.header .navbar-light .navbar-nav .nav-link {
   color: #070606;
   font-size: 0.9rem;
   margin: 0.6rem;
@@ -24,7 +24,7 @@ body {
   font-style: italic;
 }
 
-.header .navbar-dark .navbar-nav .nav-link:hover {
+.header .navbar-light .navbar-nav .nav-link:hover {
   color: red;
 }
 
