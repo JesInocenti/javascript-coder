@@ -136,9 +136,3 @@ function despedida() {
 
 
 
-// function agregarAlCarrito(id) {
-//     carrito.push(productos[id])
-//     console.log (carrito)
-// }
-
-// agregarAlCarrito(1);

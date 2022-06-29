@@ -1,0 +1,31 @@
+body{
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+    background: white;
+    width: 100%;
+    .collapse{
+        flex-grow: initial;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(7, 6, 6);
+        font-size: 0.9rem;
+        margin: 0.6rem;
+        font-weight: 700;
+        font-style: italic;
+        &:hover{
+            color: black;
+        }
+    }
+}
+
+.h1{
+    text-align: center;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif; 
+    font-weight: 800;
+    margin: 1.5rem;
+    text-shadow: black; 
+}
