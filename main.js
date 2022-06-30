@@ -114,16 +114,27 @@ if (compra == "si"){
         10 para Borrachito 750 grs
         11 para Trufas de quaker 750 grs
 
-        `)
+    `)
         if (eligeProductos == null){
 
             break;
-        }
-        if (eligeProductos == "no"){
+          }
+
+          if (eligeProductos == "no"){
             
             despedida();
             break;
         }
+
+        agregarProductoCarrito(parseInt(eligeProductos));
+        console.log(sumarTotal());
+    }
+
+    let eliminar = prompt("¿Desea eliminar algún producto del carrito ? Responda si o no");
+
+    if(eliminar == "si"){
+        console.log(CARRITO);
+        eliminarProductoCarrito();
     }
 
 }else{
@@ -134,5 +145,54 @@ function despedida() {
     alert("Gracias por visitarnos, lo esperamos pronto!");
 }
 
+function agregarProductoCarrito(id){
 
+    let producto = productos.find(producto => producto.id === id);
+    let productoEnCarrito = carrito.find(producto => producto.id === id);
 
+    if (productoEnCarrito){
+        productoEnCarrito.cantidad++;
+        console.log(carrito);
+
+    }else{
+        producto.cantidad = 1;
+        carrito.push(producto);
+        console.log(carrito);
+    }
+}
+
+function sumarTotal(){
+
+    let total = 0;
+
+    carrito.forEach(producto => {
+
+        total += producto.cantidad * producto.precio;
+    })
+
+    return total;
+}
+
+function eliminarProductoDeCarrito () {
+
+   let id = Number(prompt("Ingrese el digito del producto que desea eliminar"));
+
+   let producto = carrito.find(producto => producto.id === id);
+
+   if (productoEnCarrito){
+
+      if(productoEnCarrito.cantidad > 1){
+        
+        productoEnCarrito.cantidad--;
+        console.log(carrito);
+
+    }else{
+
+        carrito.slice(carrito.indexOf(productoEnCarrito), 1);
+        console.log(carrito);
+    }
+       
+   }else{
+    alert("El poducto no está en el carrito");
+   }
+}
