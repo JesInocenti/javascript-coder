@@ -20,12 +20,13 @@ body{
         }
     }
 }
-
-.h1{
+.postre h1{
+    color: rgb(13, 13, 175);
     text-align: center;
-    color: white;
-    font-family: 'Merriweather Sans', sans-serif; 
-    font-weight: 800;
-    margin: 1.5rem;
-    text-shadow: black; 
+    padding: 2rem;
+
+}
+.col{
+    margin: 2rem ;
+    padding: 1rem;
 }

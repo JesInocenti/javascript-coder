@@ -11,7 +11,7 @@ do {
     nuevoUsuario = prompt("Ingrese un nombre de usuario");
 } while (usuarios.includes(nuevoUsuario) );
 
-alert ("El nombre de usuario se creó correctamente");
+alert ("El nombre de usuario se creó con éxito");
 
 const productos = [
     {
