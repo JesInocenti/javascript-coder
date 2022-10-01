@@ -7,143 +7,154 @@
     <meta name="description" content="Empresa de transporte de carga de granos y cereales">
     <meta name="keywords" content="comida, delivery, sandwich, postre, torta">
     <title>ELOHIM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./img/logo_01.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="./public/images/logoelohim.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script&family=Faster+One&family=Merriweather+Sans&family=Nanum+Myeongjo&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/8d2a7e4abc.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <link rel="stylesheet" href="./public/css/styles.css">
  </head>
 <body>
- <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
-       <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-          <img src="./img/logo_01.png" width="100"/></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="./index.html">HOME</a>
-              <a class="nav-link" href="./pages/servicios.html">PRODUCTOS</a>
-              <a class="nav-link" href="./pages/cobertura.html">PAGOS</a>
-              <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
-            </div>
-          </div>
-        </div>
-    </nav>
+  <header class="header">
+    <img src="./public/images/logoelohim.png" width="150"/></a>
+    <h1>AMOR ES COMPARTIR UN POSTRE</h1>
+    <button id="cesta-carrito"><i class="fa-solid fa-cart-shopping"></i><span id="contador-carrito">0</span></i></button>
  </header>
  <main class="principal">
-  <div class="postre">
+   <div class="postre">
       <h1>POSTRES CASEROS</h1>
-  </div>
-   <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="./img/chocolinas.png" class="card-img-top" alt="choco_1">
-         <div class="card-body">
-           <h5 class="card-title">Chocolina</h5>
-           <p class="card-text">Peso: 500 grs Precio: $ 370</p>
-           <a href="#" class="btn btn-dark">Agregar al carrito</a>
-         </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="card" style="width: 18rem;">
-         <img src="./img/chocolinas.png" class="card-img-top" alt="choco_1">
-         <div class="card-body">
-           <h5 class="card-title">Chocolina</h5>
-           <p class="card-text">Peso: 500 grs Precio: $ 500</p>
-           <a href="#" class="btn btn-dark">Agregar al carrito</a>
-         </div>
-       </div>
-     </div>
-    <div class="row">
-     <div class="col">
-       <div class="card" style="width: 18rem;">
-        <img src="./img/tiramisu.png" class="card-img-top" alt="tira_1">
-        <div class="card-body">
-           <h5 class="card-title">Tiramisú</h5>
-           <p class="card-text">Peso: 500 grs Precio: $ 370</p>
-           <a href="#" class="btn btn-dark">Agregar al carrito</a>
-        </div>
-       </div>
-      </div>
-      <div class="col">
-       <div class="card" style="width: 18rem;">
-        <img src="./img/tiramisu.png" class="card-img-top" alt="tira_2">
-        <div class="card-body">
-          <h5 class="card-title">Tiramisú</h5>
-          <p class="card-text">Peso: 500 grs Precio: $ 500</p>
-          <a href="#" class="btn btn-dark">Agregar al carrito</a>
-        </div>
-       </div>
-      </div>
-   <div class="row">
-      <div class="col">
-         <div class="card" style="width: 18rem;">
-           <img src="./img/turronq.png" class="card-img-top" alt="turron_1">
-           <div class="card-body">
-             <h5 class="card-title">Turrón de quaker</h5>
-             <p class="card-text">Peso: 500 grs Precio: $ 370</p>
-             <a href="#" class="btn btn-dark">Agregar al carrito</a>
-           </div>
-         </div>
-      </div> 
-      <div class="col"> 
-       <div class="card" style="width: 18rem;">
-         <img src="./img/turronq.png" class="card-img-top" alt="turron_2">
-         <div class="card-body">
-           <h5 class="card-title">Turrón de quaker</h5>
-           <p class="card-text">Peso: 500 grs Precio: $ 500</p>
-           <a href="#" class="btn btn-dark">Agregar al carrito</a>
-         </div>
-       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="./img/borracho.png" class="card-img-top" alt="borra_1">
-        <div class="card-body">
-          <h5 class="card-title">Borrachito</h5>
-          <p class="card-text">Peso: 500 grs Precio: $ 370</p>
-          <a href="#" class="btn btn-dark">Agregar al carrito</a>
-        </div>
-      </div>
-    </div> 
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="./img/borracho.png" class="card-img-top" alt="borra_2">
-        <div class="card-body">
-          <h5 class="card-title">Borrachito</h5>
-          <p class="card-text">Peso: 500 grs Precio: $ 500</p>
-          <a href="#" class="btn btn-dark">Agregar al carrito</a>
-        </div>
-      </div>
-    </div>
+   </div>
+  <div class="container-uno">
+  <div class="contenedor">
+   <div class="card-image">
+     <img src="public/images/chocotorta.jpg">
+     <span class="card-title"><h3>Chocotorta</h3></span>
+     <a class="btn-floating halfway-fab wabes-effect waves-light pink" id=boton${producto.id}><i class="material-icons">add</i></a>
+   </div>
+   <div class="card-content">
+      <p>Prsentación: 500 grs</p>
+      <p>Precio: $500</p>
    </div>
   </div>
-  <div class="row">
-    <div class="col"> 
-      <div class="card" style="width: 18rem;">
-        <img src="./img/trufas.png" class="card-img-top" alt="trufas_1">
-        <div class="card-body">
-          <h5 class="card-title">Trufas</h5>
-          <p class="card-text">Cantidad: 12 unidades Precio: $ 350</p>
-          <a href="#" class="btn btn-dark">Agregar al carrito</a>
-        </div>
-      </div>
+  <div class="contenedor">
+   <div class="card-image">
+     <img src="public/images/chocotorta.jpg">
+     <span class="card-title"><h3>Chocotorta</h3></span>
+     <a class="btn-floating halfway-fab wabes-effect waves-light pink" id=boton${producto.id}><i class="material-icons">add</i></a>
+   </div>
+   <div class="card-content">
+      <p>Prsentación: 750 grs</p>
+      <p>Precio: $750</p>
    </div>
   </div>
- </main>
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>  
- <script src="./main.js"></script>
+</div>
+<div class="container-dos">
+  <div class="contenedor">
+   <div class="card-image">
+     <img src="public/images/tiramisu.jpg">
+     <span class="card-title"><h3>Tiramisú</h3></span>
+     <a class="btn-floating halfway-fab wabes-effect waves-light pink" id=boton${producto.id}><i class="material-icons">add</i></a>
+    </div>
+    <div class="card-content">
+      <p>Prsentación: 500 grs</p>
+      <p>Precio: $500</p>
+    </div>
+  </div>
+  <div class="contenedor">
+    <div class="card-image">
+     <img src="public/images/tiramisu.jpg">
+     <span class="card-title"><h3>Tiramisú</h3></span>
+     <a class="btn-floating halfway-fab wabes-effect waves-light pink" id=boton${producto.id}><i class="material-icons">add</i></a>
+    </div>
+    <div class="card-content">
+      <p>Prsentación: 750 grs</p>
+      <p>Precio: $750</p>
+    </div>
+  </div>
+</div>
+<div class="container-tres">
+  <div class="contenedor">
+    <div class="card-image">
+     <img src="public/images/borracho.jpg">
+     <span class="card-title"><h3>Borrachito</h3></span>
+     <a class="btn-floating halfway-fab wabes-effect waves-light pink" id=boton${producto.id}><i class="material-icons">add</i></a>
+    </div>
+   <div class="card-content">
+      <p>Prsentación: 500 grs</p>
+      <p>Precio: $500</p>
+   </div>
+ </div>
+ <div class="contenedor">
+   <div class="card-image">
+     <img src="public/images/borracho.jpg">
+     <span class="card-title"><h3>Borrachito</h3></span>
+     <a class="btn-floating halfway-fab wabes-effect waves-light pink" id=boton${producto.id}><i class="material-icons">add</i></a>
+   </div>
+   <div class="card-content">
+      <p>Prsentación: 750 grs</p>
+      <p>Precio: $750</p>
+   </div>
+ </div>
+</div>
+  <div class="contenedor">
+    <div class="card-image">
+     <img src="public/images/borracho.jpg">
+     <span class="card-title"><h3>Turrón de quacker</h3></span>
+     <a class="btn-floating halfway-fab wabes-effect waves-light pink" id=boton${producto.id}><i class="material-icons">add</i></a>
+   </div>
+   <div class="card-content">
+      <p>Prsentación: 500 grs</p>
+      <p>Precio: $500</p>
+   </div>
+  </div>
+<div class="contenedor">
+  <div class="card-image">
+    <img src="public/images/tq.jpg">
+    <span class="card-title"><h3>Turrón de quacker</h3></span>
+    <a class="btn-floating halfway-fab wabes-effect waves-light pink" id=boton${producto.id}><i class="material-icons">add</i></a>
+  </div>
+  <div class="card-content">
+      <p>Prsentación: 750 grs</p>
+      <p>Precio: $750</p>
+  </div>
+<div class="contenedor">
+  <div class="card-image">
+    <img src="public/images/trufas.jpg">
+    <span class="card-title"><h3>Trufas</h3></span>
+    <a class="btn-floating halfway-fab wabes-effect waves-light pink" id=boton${producto.id}><i class="material-icons">add</i></a>
+  </div>
+  <div class="card-content">
+    <p>Prsentación: 500 grs</p>
+    <p>Precio: $500</p>
+  </div>
+</div>
+</div>
+</main>
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="contacto">
+        <h5>CONTACTO ELOHIM</h5>
+        <ul class="vias">
+          <li><i class="bi bi-whatsapp"> +543492657467</i></li>
+          <li><i class="bi bi-envelope">  elohim@gmail.com</i></li>
+          <li><i class="bi bi-telephone-forward">  03492420780</i></li>
+        </ul>
+      </div>
+      <p>
+        ELOHIM| CP 2300 - Ciudad de Rafaela - Santa Fe - Argentina - Copyright © 2022
+      </p>
+    </div>
+  </footer>
+ <script src="./app.js"></script>
+ <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
