@@ -1,107 +1,209 @@
-let postre = "";
-let precio = 0;
-let cantidad = 0;
-let precioSinIva = 0;
-let cantidadTotal = 0;
-let seguirComprando = false;
-let confirmarCompra = false;
-let precioFinal = 0;
-let precioContado = 0;
-let confirmarPago = false;
-let nuevoUsuario = "";
+const BBDD = [
+    {
+        "id": 1,
+        "nombre":  "Chocolina",
+        "tipo": "postre",
+        "desc": "500 grs",
+        "precio": 750,
+        "imagen": "/public/images/chocotorta.jpg",
+        "cantidad":1
+    },
 
-const iva = x => x * 0.21
-const suma = (a, b) => a + b
-const resta = (a, b) => a - b
-const descuento = x => x * 0.15
-const nombres = ["Julieta", "Matías","Marcos", "Ignacio", "Paola"]
+    {
+        "id": 2,
+        "nombre": "Chocolina",
+        "tipo": "postre",
+        "desc": "750 grs",
+        "precio": 1000,
+        "imagen": "/public/images/chocotorta.jpg",
+        "cantidad":1
+    },
 
-alert ("Bienvenido a Elohim, para comprar debes ser un usuario registrado.")
+    {
+        "id": 3,
+        "nombre": "Tiramisú",
+        "tipo": "postre",
+        "desc": "500 grs",
+        "precio": 800,
+        "imagen": "/public/images/tiramisu.jpg",
+        "cantidad":1
+    },
 
-do {
-    if ( nuevoUsuario != ""){
-        alert("El nombre de usuario ya existe ingrese uno nuevo");
+    {
+        "id": 4,
+        "nombre": "Tiramisú",
+        "tipo": "postre",
+        "desc": "750 grs",
+        "precio": 1050,
+        "imagen": "/public/images/tiramisu.jpg",
+        "cantidad":1
+    },
+
+    {
+        "id": 5,
+        "nombre": "Borrachito",
+        "tipo": "postre",
+        "desc": "500 grs",
+        "precio": 700,
+        "imagen": "/public/images/borracho.jpg",
+        "cantidad":1
+    },
+
+    {
+        "id": 6,
+        "nombre": "Borrachito",
+        "tipo": "postre",
+        "desc": "750 grs",
+        "precio": 950,
+        "imagen": "/public/images/borracho.jpg",
+        "cantidad":1
+    },
+    {
+        "id": 7,
+        "nombre": "Turrón de quacker",
+        "tipo": "postre",
+        "desc": "500 grs",
+        "precio": 700,
+        "imagen": "/public/images/tq.jpg",
+        "cantidad":1
+    },
+    {
+        "id": 8,
+        "nombre": "Turrón de quacker",
+        "tipo": "postre",
+        "desc": "750 grs",
+        "precio": 950,
+        "imagen": "/public/images/tq.jpg",
+        "cantidad":1
+    },
+    {
+        "id": 9,
+        "nombre": "Trufas",
+        "tipo": "postre",
+        "desc": "12 unidades",
+        "precio": 750,
+        "imagen": "/public/images/trufas.jpg",
+        "cantidad":1
     }
-    nuevoUsuario = prompt("Ingrese un nombre de usuario");
-} while (nombres.includes(nuevoUsuario) );
+]
 
-alert ("El nombre de usuario se creó correctamente");
+const carrito = [];
 
-do {
-    postre = prompt
-    (`
+function renderizarProductos(){
 
-    Indique lo que desea comprar. Digite:
+    const tienda = document.getElementById('tienda');
 
-    Para dejar de comprar ingrese no
+    const filtro = document.getElementById('filtro');
 
-    1 para Chocolina 500 grs
-    2 para Chocolina 750 grs
-    3 para Tiramisú 500 grs
-    4 para Tiramisú 750 grs
-    5 para Turrón de quaker 500 grs
-    6 para Turrón de quaker 750 grs
-    7 para Borrachito 500 grs
-    8 para Borrachito 750 grs
-    9 para Trufas de quaker 750 grs
-
- `)
-   cantidad = parseInt(prompt("¿Cuántos desea comprar?"));
-
-    switch (postre) {
-        case "1":
-            precio = 500;  
-            break; 
-        case "2":
-            precio = 750;
-            break;
-        case "3":
-            precio = 500;
-            break;
-        case "4":
-            precio = 750;
-            break;   
-        case "5":
-            precio = 500;
-            break;
-        case "6":
-            precio = 750;
-            break;
-        case "7":
-            precio = 500;
-            break;
-        case "8":
-            precio = 750;
-            break;
-        case "9":
-            precio = 800;
-            break;
-        default:
-            alert ("El postre seleccionado no se encuentra disponible")
-            precio = 0;
-            cantidad = 0;
-            break;
-    }
-    precioSinIva += precio * cantidad;
-    precioFinal = suma(precioSinIva, iva(precioSinIva));
-    precioContado = resta(precioFinal, descuento (precioFinal));
-    cantidadTotal += cantidad;
+    BBDD.forEach((p)=>{
     
-    seguirComprando = confirm("¿Desea comprar otro postre? Presione aceptar para agregar otro postre y cancelar para avanzar con su compra.");
+        let productoHTML = `
+        <div class= "card-image d-flex justify-content-center">
+        <div class="card card-text" style="width: 100rem;">
+            <img class="card-img-top" src="${p.imagen}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${p.nombre}</h5>
+                <p>$${p.precio}</p>
+                <button class="btn pink" onclick="agregarProductoAlCarrito(${p.id})">Añadir al carrito</button>
+            </div>
+        </div>
+        </div>
+        `
 
-} while (seguirComprando);
+        tienda.innerHTML += productoHTML;
 
-confirmarCompra = confirm ("¿Desea confirmar su compra de $ "+precioFinal+"?");
-confirmarPago = confirm ("Pagando de contado tiene un 15 % de descuento. ¿Desea pagar de contado "+precioContado+"? Presione aceptar para pagar de contado o cancelar para pagar con crédito");
+    });
 
-if (confirmarPago){
-    confirmación();   
-} else{ 
-    confirmarPago = confirm ("¿Confirma pago con tarjeta de crédito "+precioFinal+"?")
-    confirmación(); 
-} 
-
-function confirmación() {
-    alert("Pago recibido. El producto se entregará en el plazo de 1 hora, gracias por su compra!");
+    
 }
+
+renderizarProductos();
+
+function agregarProductoAlCarrito(id){
+
+
+    let producto = BBDD.find(producto => producto.id === id);
+
+    let productoEnCarrito = carrito.find(producto => producto.id === id);
+
+    if(productoEnCarrito){
+        
+        productoEnCarrito.cantidad++;
+
+        console.log(carrito);
+
+    }else {
+        
+        producto.cantidad = 1;
+        carrito.push(producto);
+
+        console.log(carrito);
+    }
+ 
+
+    renderizarCarrito();
+    calcularTotal();
+
+}
+
+function renderizarCarrito(){
+
+
+    let carritoHTML = document.querySelector('#carrito');
+
+    console.log(carritoHTML);
+
+    let htmlCarrito = '';
+
+    carrito.forEach((p, id)=>{
+        
+        htmlCarrito += `
+        
+        <div class="card-image d-flex justify-content-center">
+        <div class="card card-text" style="width: 100rem;">
+            <img class="card-img-top" src="${p.imagen}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${p.nombre}</h5>
+                <p>$${p.precio}</p>
+                <p>Cantidad: ${p.cantidad}</p>
+                <button class="btn red" onclick="eliminarProductoDelCarrito(${id})">Eliminar</button>
+            </div>
+        </div>
+        </div>
+        `
+
+    })
+    
+    carritoHTML.innerHTML = htmlCarrito;
+}
+
+function eliminarProductoDelCarrito(id) {
+
+    carrito[id].cantidad--;
+
+    if(carrito[id].cantidad === 0) {
+
+        carrito.splice(id, 1);
+    }
+
+    renderizarCarrito();
+}
+
+function calcularTotal(){
+
+    let total = 0;
+
+    carrito.forEach((p)=>{
+        
+        total += p.precio * p.cantidad;
+    });
+
+    console.log(total);
+
+    const t = document.getElementById('total');
+
+    t.innerHTML = `<h5>$${total}</h5>`;
+
+}
+
 
